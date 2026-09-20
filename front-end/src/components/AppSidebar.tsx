@@ -25,6 +25,7 @@ import { RankiflyLogo } from "@/components/RankiflyLogo";
 const mainItems = [
   { title: "Dashboard", url: "/", icon: BarChart3 },
   { title: "Leaderboard", url: "/leaderboard", icon: Trophy },
+  { title: "Discover", url: "/discover", icon: Globe },
   { title: "Settings", url: "/settings", icon: Settings },
   { title: "Billing", url: "/billing", icon: CreditCard },
 ];

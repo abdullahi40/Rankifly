@@ -12,6 +12,9 @@ import SettingsPage from "./pages/SettingsPage";
 import Billing from "./pages/Billing";
 import Connect from "./pages/Connect";
 import PublicLeaderboard from "./pages/PublicLeaderboard";
+import Experience from "./pages/Experience";
+import Discover from "./pages/Discover";
+import CompanyDashboard from "./pages/CompanyDashboard";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +27,12 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/public/:companyId" element={<PublicLeaderboard />} />
+            <Route path="/discover" element={<Discover />} />
+            <Route
+              path="/dashboard/:companyId"
+              element={<CompanyDashboard />}
+            />
+            <Route path="/experiences/:experienceId" element={<Experience />} />
             <Route element={<AppLayout />}>
               <Route path="/" element={<Dashboard />} />
               <Route path="/leaderboard" element={<Leaderboard />} />
